@@ -21,15 +21,13 @@ public class MainActivity extends AppCompatActivity {
         Button addButton = (Button) findViewById(R.id.add);
         TextView total = (TextView) findViewById(R.id.result);
 
-        // string -> int
-        Integer numberOne = Integer.parseInt(numOne.getText().toString());
-        Integer numberTwo = Integer.parseInt(numTwo.getText().toString());
-
-        int result = numberOne + numberTwo;
-
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // string -> int
+                int numberOne = Integer.parseInt(numOne.getText().toString());
+                int numberTwo = Integer.parseInt(numTwo.getText().toString());
+                int result = numberOne + numberTwo;
                 total.setText("RESULT: " + result);
             }
         });
