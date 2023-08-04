@@ -6,15 +6,71 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/numOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_margin="8dp"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:text="@string/credit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:text="Num One"
         android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/numOneED"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/numOne"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/numOne"
+        android:ems="10"
+        android:hint="enter first number!"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/numTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numOne"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:text="Num Two"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/numTwoED"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numOneED"
+        android:layout_alignBaseline="@id/numTwo"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/numTwo"
+        android:ems="10"
+        android:hint="enter second number!"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numTwo"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:text="ADD" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="monospace"
+        android:text="RESULT: "
+        android:textSize="24sp" />
+
 
 </RelativeLayout>
