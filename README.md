@@ -1,4 +1,4 @@
-PROJECT: CollegePracticeApp
+Project: CollegePracticeApp
 ============================
 
 Android Programs
