@@ -5,16 +5,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="Image of the User"
+        android:src="@drawable/ic_launcher_background" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_margin="8dp"
-        android:fontFamily="monospace"
         android:gravity="center"
-        android:text="@string/credit"
-        android:textSize="18sp" />
+        android:textColor="#ff0000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="SHUHBAM" />
 
 </RelativeLayout>
